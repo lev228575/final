@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2><a class="llol" href="/1.html">главная</a>
+            <a class="lol" href="/товары/3.html">товары</a>
+            <a class="loll" href="/отзывы/2.html">отзывы</a>
+        </h2>
+    </header>
+    <main>
+        <center>
+            <h1>отзывы</h1>
+            <div>
+                <input id="review" type="text" placeholder="Пиши сюда свой отзыв"></input>
+
+                <button id="send-btn">отправить</button>
+            </div>
+        
+        <div class="reviews">
+    
+        </div>
+    </center>
+    </main>
+    <center>
+        <footer>
+            <img src="lll.png" alt="" height="35px">
+            <img src="lll.png" alt="" height="35px">
+            <img src="lll.png" alt="" height="35px">
+            <img src="lll.png" alt="" height="35px">
+
+            <h4>LEV</h4>
+            <img src="lll.png" alt="" height="35px">
+            <img src="lll.png" alt="" height="35px">
+            <img src="lll.png" alt="" height="35px">
+            <img src="lll.png" alt="" height="35px">
+        </footer>
+    </center>
+
+
+    <script>
+        const review = document.querySelector("#review");
+        const btn = document.querySelector("#send-btn")
+        const reviews = document.querySelector(".reviews")
+        btn.addEventListener('click', () => {
+            const value = review.value
+            reviews.innerHTML+=`<p>${value}</p>`
+        })
+    </script>
+
+</body>
+
+</html>
